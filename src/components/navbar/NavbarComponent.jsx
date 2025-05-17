@@ -84,11 +84,11 @@ export const NavbarComponent = () => {
           </div>
 
         
-    <div className=" w-150 border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
+    <div className=" w-50 border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
             <Search color="gray" size={20} />
             <input
                 type="text"
-                placeholder="start your search"
+                placeholder="search"
                 name="where"
                 id=""
               />
