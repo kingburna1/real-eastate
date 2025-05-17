@@ -3,6 +3,14 @@ import "./globals.css";
 import { NavbarComponent } from "@/components/navbar/NavbarComponent";
 import { ThemeProvider } from "@/components/theme-provider";
 import FooterComponent from "@/components/footer/FooterComponent";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -38,5 +47,6 @@ export default function RootLayout({ children }) {
         </ThemeProvider>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

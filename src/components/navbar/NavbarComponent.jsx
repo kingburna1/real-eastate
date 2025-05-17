@@ -5,6 +5,14 @@ import  { useState, useEffect } from 'react';
 import { categories } from '@/utils/constans';
 import {  useRef } from 'react';
 import Link from 'next/link'
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 
 import * as Icons from "lucide-react";
 
@@ -163,10 +171,16 @@ export const NavbarComponent = () => {
 
         </div>
         <div className="flex gap-5    justify-between">
-          <h2>Airbnb your home</h2>
+          <h2 className="text-xs">Airbnb your home</h2>
           <ModeToggle />
-          <div className="flex justify-center transform translate-y-[-10px] items-center gap-4 rounded-2xl w-[100px] h-[50px] shadow-md cursor-pointer">
-            <Menu />
+          <div className="flex justify-center transform translate-y-[-10px] items-center gap-4 rounded-2xl w-[200px] h-[50px] shadow-md cursor-pointer">
+          <SignedOut>
+              <SignInButton />
+              <SignUpButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
 
            
             {/* user menu start */}
