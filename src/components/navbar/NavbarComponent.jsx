@@ -180,7 +180,7 @@ export const NavbarComponent = () => {
             {/* user menu start */}
              <DropdownMenu>
       <DropdownMenuTrigger asChild>
-      <div className="rounded-full bg-gray-700 h-[40px] w-[40px] flex items-center justify-center">
+      <div className="rounded-full h-[40px] w-[80px] flex items-center justify-center">
       <SignedOut>
               <SignInButton />
               <SignUpButton />
