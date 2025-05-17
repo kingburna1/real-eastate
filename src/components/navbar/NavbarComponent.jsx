@@ -174,20 +174,20 @@ export const NavbarComponent = () => {
           <h2 className="text-xs">Airbnb your home</h2>
           <ModeToggle />
           <div className="flex justify-center transform translate-y-[-10px] items-center gap-4 rounded-2xl w-[200px] h-[50px] shadow-md cursor-pointer">
-          <SignedOut>
-              <SignInButton />
-              <SignUpButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+          <Menu />
 
            
             {/* user menu start */}
              <DropdownMenu>
       <DropdownMenuTrigger asChild>
       <div className="rounded-full bg-gray-700 h-[40px] w-[40px] flex items-center justify-center">
-              <User color="#fff" />
+      <SignedOut>
+              <SignInButton />
+              <SignUpButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
             </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

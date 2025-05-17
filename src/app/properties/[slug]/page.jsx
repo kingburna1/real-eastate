@@ -299,7 +299,6 @@ const page = async({params}) => {
       <iframe
        className="w-full h-full rounded-xl shadow-lg"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18539.959396730537!2d13.356682713038028!3d52.51723614355185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2scm!4v1747424742129!5m2!1sen!2scm"
-       allowfullscreen=""
        loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
        </iframe>
