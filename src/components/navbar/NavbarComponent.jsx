@@ -94,7 +94,7 @@ export const NavbarComponent = () => {
               />
          </div>
 
-         <div className="flex justify-center align-center text-xs">
+         <div className="flex  gap-2 justify-center align-center text-xs">
          <SignedOut>
               <SignInButton />
               <SignUpButton />
