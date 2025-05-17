@@ -27,19 +27,19 @@ export const metadata = {
   description:
     "  A real estate  web application for browsing, searching, and learning about housing, in the world, characters, types, stats, and evolutions using the API. Built with Next.js and styled for responsive performance.",
   icons: {
-    icon: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large",
-    apple: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large",
-    shortcut: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large",
+    icon: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small",
+    apple: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small",
+    shortcut: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small",
   },
   openGraph: {
     title: "BURNA-made - Web App",
     description:
       "Browse, search, and explore real estate properties with real-time data from the PropertiesAPI. Beautiful, fast, and responsive real estate web app built with Next.js.",
-    url: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large", // update with your actual URL
+    url: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small", // update with your actual URL
     siteName: "BURNA-made ",
     images: [
       {
-        url: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large", // change this to your OG image URL
+        url: "https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small", // change this to your OG image URL
         width: 1200,
         height: 630,
         alt: "BURNA-made Web App",
@@ -53,7 +53,7 @@ export const metadata = {
     title: "BURNA-made - Web App",
     description:
       "Explore detailed properties info with a modern, responsive web app powered by PropertiesAPI and Next.js.",
-    images: ["https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=x_large"], // same image as above
+    images: ["https://a0.muscache.com/im/pictures/bced1392-9538-41df-92d9-f058a7188b0f.jpg?aki_policy=small"], // same image as above
     creator: "@KINGBURNA", // optional
   },
 };
