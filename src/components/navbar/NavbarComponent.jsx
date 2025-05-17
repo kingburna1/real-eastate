@@ -84,7 +84,7 @@ export const NavbarComponent = () => {
           </div>
 
         
-    <div className=" w-50 h-10 border border-green-300 rounded-3xl flex justify-center items-center p-2 ">
+    <div className=" w-fit h-10 border border-green-300 rounded-3xl flex justify-center items-center p-2 ">
             <Search color="gray" size={10} />
             <input
                 type="text"
