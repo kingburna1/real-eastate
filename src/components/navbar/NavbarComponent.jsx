@@ -97,7 +97,7 @@ export const NavbarComponent = () => {
          <div className="flex  gap-2 justify-center align-center text-xs w-fit hover:bg-gray-400 rounded-2xl cursor-pointer">
          <DropdownMenu>
       <DropdownMenuTrigger asChild>
-      <div className="rounded-full h-[40px] w-[80px] flex items-center justify-center">
+      <div className="rounded-full h-[40px] w-[80px] flex  gap-2 items-center justify-center">
       <SignedOut>
               <SignInButton />
               <SignUpButton />
