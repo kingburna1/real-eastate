@@ -6,6 +6,59 @@ import { Share, Heart, LoaderPinwheel, Layers2, PictureInPicture, ServerOff, Cli
 // import { Share, Heart, LoaderPinwheel, Layers2, PictureInPicture, ServerOff,   } from 'lucide-react'
 import React from 'react';
 
+
+export async function generateMetadata({ params }) {
+  const {slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  let  property = Properties?.find((item) => item.name.toLowerCase().split(' ').join('-') === decodedSlug)
+
+  if (!property) {
+    return {
+      title: "property Not Found",
+    };
+  }
+
+  return {
+    title: `${property.name} - burna-made`,
+    description: `Discover information about ${property.name}, including stats, types, and more.`,
+    icons: {
+      icon: property?.xl_picture_url,
+      apple:property?.xl_picture_url,
+      shortcut:property?.xl_picture_url,
+    },
+    openGraph: {
+      title: `${property?.name} - burna-made`,
+      description: `Explore detailed information about ${property?.name} in our modern PropertiesDex.`,
+      url: `${property?.image}`,
+      siteName: "burna-made",
+      images: [
+        {
+          url: property?.image,
+          width: 1200,
+          height: 630,
+          alt: `${property?.name} burna-made`,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${property?.name} -burna-made`,
+      description: `Explore ${property?.name} on burna-made powered by PropertiesAPI.`,
+      images: [property?.xl_picture_url],
+    },
+  };
+}
+
+
+
+
+
+
+
+
+
 const page = async({params}) => {
     const {slug } = await params;
     const decodedSlug = decodeURIComponent(slug);
@@ -14,6 +67,14 @@ const page = async({params}) => {
     
     
   return (
+
+    
+
+
+
+
+
+
     <>
       <NavbarComponent/>
      <div className="px-10"> 
