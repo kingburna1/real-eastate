@@ -77,15 +77,15 @@ export const NavbarComponent = () => {
     <>
     <div className='fixed z-50 w-full top-0  bg-background'>
 
-        <div className=' w-full flex justify-center align-center p-4 md:hidden lg:hidden'>
+        <div className=' w-full flex justify-center gap-1 items-center p-4 md:hidden lg:hidden'>
 
           <div>
             <img className='w-20 h-20' src="/logo22.png" alt="logo" />
           </div>
 
         
-    <div className=" w-50 border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
-            <Search color="gray" size={20} />
+    <div className=" w-50 h-10 border border-green-300 rounded-3xl flex justify-center items-center p-2 ">
+            <Search color="gray" size={10} />
             <input
                 type="text"
                 placeholder="search"
@@ -95,13 +95,69 @@ export const NavbarComponent = () => {
          </div>
 
          <div className="flex  gap-2 justify-center align-center text-xs w-fit hover:bg-gray-400 rounded-2xl cursor-pointer">
-         <SignedOut>
+         <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+      <div className="rounded-full h-[40px] w-[80px] flex items-center justify-center">
+      <SignedOut>
               <SignInButton />
               <SignUpButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
+            </div>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56">
+        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
+          <DropdownMenuItem>
+            Profile
+            <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            Billing
+            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            Settings
+            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            Keyboard shortcuts
+            <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
+          <DropdownMenuItem>Team</DropdownMenuItem>
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
+            <DropdownMenuPortal>
+              <DropdownMenuSubContent>
+                <DropdownMenuItem>Email</DropdownMenuItem>
+                <DropdownMenuItem>Message</DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>More...</DropdownMenuItem>
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+          </DropdownMenuSub>
+          <DropdownMenuItem>
+            New Team
+            <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>GitHub</DropdownMenuItem>
+        <DropdownMenuItem>Support</DropdownMenuItem>
+        <DropdownMenuItem disabled>API</DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>
+          Log out
+          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
          </div>
 
          </div>
