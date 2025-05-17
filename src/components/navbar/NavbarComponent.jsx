@@ -77,9 +77,14 @@ export const NavbarComponent = () => {
     <>
     <div className='fixed z-50 w-full top-0  bg-background'>
 
-        <div className='flex justify-center align-center p-4 md:hidden lg:hidden'>
+        <div className=' w-full flex justify-center align-center p-4 md:hidden lg:hidden'>
+
+          <div>
+            <img className='w-20 h-20' src="/logo22.png" alt="logo" />
+          </div>
+
         
-    <div className=" w-full  border border-green-300 rounded-3xl flex justify-center items-center p-3 gap-3">
+    <div className=" w-200px  border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
             <Search color="gray" size={20} />
             <input
                 type="text"
@@ -87,6 +92,16 @@ export const NavbarComponent = () => {
                 name="where"
                 id=""
               />
+         </div>
+
+         <div className="flex justify-center align-center text-xs">
+         <SignedOut>
+              <SignInButton />
+              <SignUpButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
          </div>
 
          </div>
