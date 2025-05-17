@@ -84,7 +84,7 @@ export const NavbarComponent = () => {
           </div>
 
         
-    <div className=" w-200px  border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
+    <div className=" w-150 border border-green-300 rounded-3xl flex justify-center items-center p-2 gap-3">
             <Search color="gray" size={20} />
             <input
                 type="text"
@@ -94,7 +94,7 @@ export const NavbarComponent = () => {
               />
          </div>
 
-         <div className="flex  gap-2 justify-center align-center text-xs">
+         <div className="flex  gap-2 justify-center align-center text-xs w-fit hover:bg-gray-400 rounded-2xl cursor-pointer">
          <SignedOut>
               <SignInButton />
               <SignUpButton />
