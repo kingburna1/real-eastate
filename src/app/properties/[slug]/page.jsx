@@ -29,11 +29,11 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${property?.name} - burna-made`,
       description: `Explore detailed information about ${property?.name} in our modern PropertiesDex.`,
-      url: `${property?.image}`,
+      url: `${property?.xl_picture_url}`,
       siteName: "burna-made",
       images: [
         {
-          url: property?.image,
+          url: property?.xl_picture_url,
           width: 1200,
           height: 630,
           alt: `${property?.name} burna-made`,
